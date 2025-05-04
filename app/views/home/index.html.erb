@@ -25,22 +25,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rooms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Amenities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
 
@@ -53,10 +37,7 @@
           <div class="col-md-8 text-white py-5 mt-5" data-aos="fade-right">
             <h1 class="display-3 fw-bold mb-4">Welcome to Butong Inn Hotel</h1>
             <p class="lead mb-4">Experience unparalleled luxury and comfort in our world-class accommodations</p>
-            <div class="d-flex gap-3">
-              <a href="#" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="200">Book Now</a>
-              <a href="#" class="btn btn-outline-light btn-lg" data-aos="fade-up" data-aos-delay="400">Learn More</a>
-            </div>
+            <div class="d-flex gap-3">            </div>
           </div>
         </div>
       </div>
@@ -90,6 +71,78 @@
                 <i class="bi bi-water fs-1 mb-3"></i>
                 <h3 class="card-title">Spa & Wellness</h3>
                 <p class="card-text">Relax and rejuvenate at our premium spa facilities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="display-4 fw-bold">Our Rooms</h2>
+          <p class="lead text-muted">Choose from our carefully curated selection of rooms</p>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Single Room -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304" class="card-img-top" alt="Single Room">
+              <div class="card-body">
+                <h3 class="card-title">Single Room</h3>
+                <p class="card-text">Perfect for solo travelers, our single rooms offer comfort and convenience with:</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Queen-size bed</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Private bathroom</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Work desk</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Smart TV</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div class="h4 mb-0">₱1,000 per night</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Double Room -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39" class="card-img-top" alt="Double Room">
+              <div class="card-body">
+                <h3 class="card-title">Double Room</h3>
+                <p class="card-text">Ideal for couples or friends, featuring spacious comfort with:</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Two queen-size beds</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Private balcony</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Seating area</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Mini fridge</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div class="h4 mb-0">₱2,000 per night</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Suite -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card shadow-sm h-100">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" class="card-img-top" alt="Suite Room">
+              <div class="card-body">
+                <h3 class="card-title">Luxury Suite</h3>
+                <p class="card-text">Experience ultimate luxury with our premium suites offering:</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>King-size bed</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Separate living area</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Jacuzzi tub</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ocean view</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div class="h4 mb-0">₱2,700 per night</div>
+                </div>
               </div>
             </div>
           </div>
@@ -152,6 +205,24 @@
       transition: background 0.3s ease;
     }
 
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    }
+
+    .text-success {
+      color: #28a745;
+    }
     
     </style>
   </body>
